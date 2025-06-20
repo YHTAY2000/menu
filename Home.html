@@ -1,0 +1,266 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<style>
+    .img-fluid{
+        height: 250px;
+        width: 350px;
+    }
+
+    .navtop{
+        position:fixed;
+        right:20px;
+        bottom:20px;
+        padding:10px;
+        background-color: gold;
+        color:black;
+        z-index:20;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+    <div class="navtop">Top</div>
+    <nav class="navbar navbar-expand-lg" style="background-color:antiquewhite">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Filter
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item filter-link" data-filter="all" href="#">All</a></li>
+                            <li><a class="dropdown-item filter-link" data-filter="rice" href="#">Rice</a></li>
+                            <li><a class="dropdown-item filter-link" data-filter="noodles" href="#">Noodles</a></li>
+                            <li><a class="dropdown-item filter-link" data-filter="other" href="#">Other</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <div class="container-fluid">
+        <section class="card">
+            <header class="card-header">
+                <h2 class="card-title" id="card-title">ALL</h2>
+            </header>
+            <div class="card-body">
+                <div class="row row-gutter-sm mb-5">
+                    <div class="row row-gutter-sm">
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="rice">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/FriedRice.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">炒饭</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="rice">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/ChickenRice.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">鸡饭</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="rice">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/CurryChicken.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">咖喱鸡</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="noodles">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/CurryMee.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">咖喱面</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="other">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/tofu.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">酿豆腐</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="noodles">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/CharKoayTeow.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">炒果条</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="noodles">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/FishHeadNoodle.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">鱼头米粉</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="noodles">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/WantanMee.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">云吞面</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="noodles">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/PanMee1.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">板面（捏）</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="noodles">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/PanMee2.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">板面</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="rice">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">宫保鸡肉饭</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="rice">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">姜葱猪肉饭</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="noodles">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="../Menu/Image/Rice/ShrampNoodles.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">虾面</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-4 mb-4 food-item" data-category="noodles">
+                            <div class="card card-modern card-modern-alt-padding">
+                                <div class="card-body bg-light">
+                                    <div class="image-frame mb-2">
+                                        <div class="image-frame-wrapper">
+                                            <img src="" class="img-fluid" alt="" />
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title">猪肠粉</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+
+        var cardTitle = $('#card-title');
+
+        $('.filter-link').on('click', function (e) {
+            e.preventDefault();
+            var filter = $(this).data('filter');
+            cardTitle.text(filter.toUpperCase());
+
+            $('.food-item').each(function () {
+                var category = $(this).data('category');
+                if (filter === 'all' || category === filter) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        $('.navtop').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 });
+        });
+    </script>
+</body>
+s
+</html>
